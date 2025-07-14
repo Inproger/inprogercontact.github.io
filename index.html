@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>inproger_game_ Sosyal Medya</title>
+<style>
+  body {
+    background-color: #121212;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+  h1 {
+    margin-bottom: 10px;
+    color: #1db954;
+    font-size: 3rem;
+  }
+  p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #bbb;
+  }
+  .social-links {
+    display: flex;
+    gap: 35px;
+  }
+  .social-links a {
+    color: #eee;
+    font-size: 3rem;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  .social-links a:hover {
+    color: #1db954;
+  }
+  footer {
+    margin-top: auto;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #555;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+
+  /* WhatsApp Butonu */
+  #whatsapp-contact {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #25d366;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 16px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(37, 211, 102, 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 9999;
+    text-decoration: none;
+    max-width: 220px;
+  }
+  #whatsapp-contact:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+  }
+  #whatsapp-contact svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+    flex-shrink: 0;
+  }
+  @media (max-width: 600px) {
+    #whatsapp-contact {
+      font-size: 0.9rem;
+      padding: 8px 14px;
+      gap: 6px;
+      max-width: 180px;
+    }
+    .social-links a {
+      font-size: 2.5rem;
+      gap: 25px;
+    }
+  }
+</style>
+<!-- FontAwesome ikonları -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+</head>
+<body>
+  <h1>inproger_game_</h1>
+  <p>Sosyal medya hesaplarım</p>
+  <div class="social-links">
+    <a href="https://instagram.com/inproger_game_" target="_blank" title="Instagram" rel="noopener">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@inproger_game_" target="_blank" title="TikTok" rel="noopener">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.twitch.tv/inproger" target="_blank" title="Twitch" rel="noopener">
+      <i class="fab fa-twitch"></i>
+    </a>
+    <a href="https://www.youtube.com/@inproger_game" target="_blank" title="YouTube" rel="noopener">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://kick.com/inproger" target="_blank" title="Kick" rel="noopener">
+      <img 
+        src="https://kick.com/favicon.ico" 
+        alt="Kick" 
+        style="width: 36px; height: 36px; object-fit: contain;"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <a
+    id="whatsapp-contact"
+    href="https://wa.me/994554026680"
+    target="_blank"
+    rel="noopener"
+    aria-label="WhatsApp ile iletişime geç"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M20.52 3.48A11.92 11.92 0 0012 0C5.373 0 0 5.373 0 12c0 2.114.556 4.142 1.609 5.944L0 24l6.24-1.61A11.928 11.928 0 0012 24c6.627 0 12-5.373 12-12a11.92 11.92 0 00-3.48-8.52zm-8.72 16.82c-1.97 0-3.92-.53-5.6-1.52l-.4-.23-3.7.96 1.04-3.6-.27-.37a9.952 9.952 0 01-1.53-5.53c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.34-7.3c-.29-.15-1.7-.83-1.96-.92-.26-.1-.45-.15-.64.15-.19.29-.73.92-.9 1.11-.17.19-.34.22-.63.08-.29-.15-1.22-.45-2.33-1.44-.86-.76-1.44-1.7-1.61-1.99-.17-.29-.02-.44.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.63-1.52-.86-2.08-.23-.55-.46-.48-.64-.49-.17-.01-.36-.01-.55-.01-.19 0-.51.07-.77.36-.26.29-1 1-1 2.44s1.03 2.83 1.17 3.03c.14.19 2.01 3.07 4.87 4.3.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.12.55-.08 1.7-.69 1.94-1.36.24-.68.24-1.26.17-1.39-.07-.12-.26-.19-.55-.34z"/>
+    </svg>
+    Benimle İletişime Geç
+  </a>
+
+  <footer>
+    © Tüm hakları inproger_game_ tarafından korunmaktadır.
+  </footer>
+</body>
+</html>
